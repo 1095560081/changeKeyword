@@ -1,6 +1,6 @@
 # link-completion README
 
-![Image text](https://github.com/1095560081/changeKeyword/tree/master/pic/example.gif)
+![pic/example.gif](https://github.com/1095560081/changeKeyword/tree/master/pic/example.gif)
 
 ## Keyboard Shortcut
 - Select keywords: ctrl+1 
