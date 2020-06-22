@@ -3,7 +3,7 @@
 	"displayName": "LinkCompletion",
 	"repository": "https://github.com/1095560081/changeKeyword",
 	"description": "",
-	"version": "0.0.2",
+	"version": "0.0.8",
 	"publisher": "william222",
 	"engines": {
 		"vscode": "^1.45.0"
