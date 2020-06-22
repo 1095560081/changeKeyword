@@ -1,6 +1,6 @@
 # link-completion README
 
-<iframe height=498 width=510 src="pic/demo.mp4">
+![Image text](pic/example.gif)
 
 ## Keyboard Shortcut
 - Select keywords: ctrl+1 
