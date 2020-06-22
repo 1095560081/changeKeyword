@@ -1,0 +1,85 @@
+{
+	"name": "link-completion",
+	"displayName": "LinkCompletion",
+	"description": "",
+	"version": "0.0.2",
+	"publisher": "william",
+	"engines": {
+		"vscode": "^1.45.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:markdown"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Paste Image Configuration",
+			"properties": {
+				"jsonUrl.path": {
+					"type": "string",
+					"default": "keywords.json",
+					"description": "path of url"
+				},
+				"language.type": {
+					"type": "string",
+					"default": "en",
+					"description": "ch for Chinese and en for English"
+				}
+			}
+		},
+		"keybindings": [
+			{
+				"command": "selection.keyword",
+				"key": "ctrl+1",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "replace.keyword",
+				"key": "ctrl+2",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "replace.allkeyword",
+				"key": "ctrl+3",
+				"when": "editorTextFocus"
+			}
+		],
+		"commands": [
+			{
+				"command": "selection.keyword",
+				"title": "selectionkeyword"
+			},
+			{
+				"command": "replace.keyword",
+				"title": "replacekeyword"
+			},
+			{
+				"command": "replace.allkeyword",
+				"title": "replaceallkeyword"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.45.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	},
+	"dependencies": {
+		"axios": "^0.16.2"
+	}
+}
