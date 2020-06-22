@@ -1,6 +1,6 @@
 # link-completion README
 
-![pic/example.gif](https://github.com/1095560081/changeKeyword/tree/master/pic/example.gif)
+![example](pic/example.gif)
 
 ## Keyboard Shortcut
 - Select keywords: ctrl+1 
@@ -11,11 +11,10 @@
 ## Parameters
 - JSON file path(optional):
    - default value: keywords.json
-json file like word2.json
-Absolute path is recommended
-in json file
-ori is the keywords you want to find
-replace is the word you want to replace
+1. json file like word2.json
+2. Absolute path is recommended
+3. "ori" in json file is the keywords you want to find
+4. "replace" in json file is the word you want to replace
 - Language(optional):    
    cn for Chinese and en for English.
    - default value: en
